@@ -75,7 +75,7 @@ function todos(state = [], action) {
 
 ---
 
-# Usage with Reac
+# Usage with React
 
 ```js
 npm install --save react-redux
