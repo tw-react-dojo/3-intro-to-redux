@@ -3,7 +3,7 @@ import Todo from '../components/Todo'
 import { connect } from 'react-redux'
 import { toggleTodo } from '../reducer'
 
-let TodoList = ({todos, length, toggleTodo}) => (
+let TodoList = ({ todos, length, toggleTodo }) => (
   <div className="row">
     <h2>You have to do {length} thing!</h2>
     <ul className="list-group">
@@ -13,7 +13,8 @@ let TodoList = ({todos, length, toggleTodo}) => (
           text={todo.text}
           completed={todo.completed}
           onClick={() => toggleTodo(index)}
-        />))}
+        />
+      ))}
     </ul>
   </div>
 )

@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { addTodo } from '../reducer'
 
-let AddTodo = ({addTodo}) => {
+let AddTodo = ({ addTodo }) => {
   let input
   return (
     <div className="row">
