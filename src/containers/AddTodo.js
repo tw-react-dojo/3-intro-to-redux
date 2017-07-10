@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 
 let AddTodo = () => {
   let input
-
   return (
     <div className="row">
       <form
