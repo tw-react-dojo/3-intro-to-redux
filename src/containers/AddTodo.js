@@ -1,7 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { addTodo } from '../reducer'
 
-let AddTodo = () => {
+let AddTodo = ({addTodo}) => {
   let input
   return (
     <div className="row">
@@ -12,7 +13,7 @@ let AddTodo = () => {
           if (!input.value.trim()) {
             return
           }
-          //dispatch add todo
+          addTodo(input.value.trim())
           input.value = ''
         }}
       >
@@ -30,6 +31,10 @@ let AddTodo = () => {
   )
 }
 
-AddTodo = connect()(AddTodo)
+const mapStateToProps = () => {}
+
+const mapDispatchToProps = { addTodo }
+
+AddTodo = connect(mapStateToProps, mapDispatchToProps)(AddTodo)
 
 export default AddTodo

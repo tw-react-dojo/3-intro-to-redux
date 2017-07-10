@@ -1,4 +1,3 @@
-
 build-lists: true
 
 # React Dojo / Intro to Redux
